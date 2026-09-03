@@ -18,7 +18,7 @@ npm i @7l/fontlib
 
 ```tsx
 import { registerFont, Text } from "@7l/fontlib";
-import notoSans from "./fonts/noto-sans";
+import notoSans from "./fonts/noto-sans"; // buffer
 
 registerFont(notoSans);
 
