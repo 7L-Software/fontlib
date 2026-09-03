@@ -1,0 +1,43 @@
+{
+	"name": "@7l/fontlib",
+	"version": "1.0.0",
+	"description": "",
+	"main": "out/init.luau",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "npm run build",
+		"lint": "eslint src"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"type": "commonjs",
+	"types": "out/index.d.ts",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/react": "^17.3.7-ts.2",
+		"@rbxts/react-roblox": "^17.3.7-ts.2",
+		"@rbxts/types": "^1.0.947",
+		"@typescript-eslint/eslint-plugin": "^8.69.0",
+		"@typescript-eslint/parser": "^8.69.0",
+		"eslint": "^10.9.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.6",
+		"eslint-plugin-roblox-ts": "^1.4.1",
+		"prettier": "^3.9.6",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"@rbxts/react": "^17.3.7-ts.2",
+		"@rbxts/react-roblox": "^17.3.7-ts.2"
+	}
+}
