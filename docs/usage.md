@@ -5,12 +5,11 @@
 ```ts
 import { registerFont } from "@7l/fontlib";
 
-registerFont(notoSans);
-registerFont(notoSansBold);
+registerFont(buffer); // buffer은 실제 .ttf 내용이여야함
 registerFont(pretendard, { family: "폰트이름", weight: 500 });
 ```
 
-registerFont는 첫번째 arg로 `buffer` 타입을 받아요. (이게 실제 .ttf 바이너리가 되어야 함)
+registerFont는 첫번째 arg로 `buffer` 타입을 받아요.
 이름과 굵기, 기울임은 폰트에서 알아서 읽지만 두번째 arg로 직접 지정할 수 있어요.
 
 ## 렌더링
