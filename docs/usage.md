@@ -10,7 +10,8 @@ registerFont(notoSansBold);
 registerFont(pretendard, { family: "폰트이름", weight: 500 });
 ```
 
-이름과 굵기, 기울임은 폰트에서 알아서 읽어요. 두번째 arg로 직접 지정할 수 있어요.
+registerFont는 첫번째 arg로 `buffer` 타입을 받아요. (이게 실제 .ttf 바이너리가 되어야 함)
+이름과 굵기, 기울임은 폰트에서 알아서 읽지만 두번째 arg로 직접 지정할 수 있어요.
 
 ## 렌더링
 
